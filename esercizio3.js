@@ -130,7 +130,7 @@ if (totalShoppingCart>50) {
 /* SCRIVI QUI LA TUA RISPOSTA */
 let isMale= true;
 let gender=isMale?"Male":"Female"
-console.log("Male");
+console.log(gender);
 
 
 /* ESERCIZIO EXTRA 5
