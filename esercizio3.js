@@ -73,6 +73,17 @@ for (let a=0; a<=15;a++) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+let c=6
+let d=2
+if (c===8) {
+  console.log("Il valore di c è 8");
+} else if (d===8) {
+  console.log("Il valore di d è 8");
+} else if (c+d===8) {
+  console.log("La somma tra c e d da come risultato 8");
+} else if (c-d===8) {
+  console.log("La sottrazione tra c e d da come risultato 8");
+}
 
 /* ESERCIZIO EXTRA 2
 Stai lavorando su un sito di e-commerce. Stai salvando il saldo totale del carrello dell'utente in una variabile "totalShoppingCart".
@@ -81,6 +92,15 @@ Crea un algoritmo che determini l'ammontare totale che deve essere addebitato al
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+let totalShoppingCart=20
+let speseSpedizione=10  
+
+if (totalShoppingCart>50) {
+  console.log("Hai raggiunto la spedizione gratuita! Totale dovuto €" + totalShoppingCart);
+ } else if (totalShoppingCart<50) {
+    console.log("Non hai raggiunto la spedizione gratuita! Totale con Spedizione €"+(totalShoppingCart+speseSpedizione));
+  }
+
 
 /* ESERCIZIO EXTRA 3
   Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
@@ -89,6 +109,18 @@ Crea un algoritmo che determini l'ammontare totale che deve essere addebitato al
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+let isBlackFriday = true
+
+if (isBlackFriday) {
+  //applica lo sconto
+  totalShoppingCart*= 0.8;
+} 
+if (totalShoppingCart>50) {
+  console.log("Hai raggiunto la spedizione gratuita! Totale con Sconto dovuto €" + totalShoppingCart);
+ } else if (totalShoppingCart<50) {
+    console.log("Non hai raggiunto la spedizione gratuita! Totale con Sconto e Spedizione €"+(totalShoppingCart+speseSpedizione));
+  }
+
 /*  ESERCIZIO EXTRA 4
   Usa un operatore ternaio per assegnare ad una variabile chiamata "gender" i valori "male" o "female".
   La scelta deve essere basata sul valore di un'altra variabile booleana chiamata isMale.
@@ -96,6 +128,10 @@ Crea un algoritmo che determini l'ammontare totale che deve essere addebitato al
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+let isMale= true;
+let gender=isMale?"Male":"Female"
+console.log("Male");
+
 
 /* ESERCIZIO EXTRA 5
   Scrivi un algoritmo che iteri i numeri da 1 a 100, stampandoli in console. Se un valore tuttavia è multiplo di 3 (operatore modulo!), stampa al suo posto la parola "Fizz" e se il numero è multiplo di 5, stampa "Buzz". Se le condizioni si verificano entrambe, stampa "FizzBuzz".
